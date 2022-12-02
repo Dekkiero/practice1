@@ -1,0 +1,82 @@
+     h1 {
+     font-size: 24px;
+     text-align: center;
+ }
+
+ .raw {
+     width: 100%;
+     display: flex;
+     text-align: center;
+ }
+
+ .item {
+     border: 3px solid #368436;
+     background: #999;
+     flex: 1 1 0;
+     margin: 10px;
+     padding: 10px;
+ }
+
+ p {
+     font-size: 1.2em;
+ }
+
+ #link_1 {
+     color: aqua;
+     border-color: aqua;
+ }
+
+ #link_1:visited {
+     color: cadetblue;
+ }
+
+ #link_2 {
+     color: orangered;
+     border-color: orangered;
+ }
+
+ #link_2:visited {
+     color: orange;
+ }
+
+ #link_3 {
+     color: lightgreen;
+     border-color: lightgreen;
+ }
+
+ #link_3:visited {
+     color: green;
+ }
+
+ #link_4 {
+     color: magenta;
+     border-color: magenta;
+ }
+
+ #link_4:visited {
+     color: darkmagenta;
+ }
+ /*Desctop*/
+@media (min-width: 992px) {
+
+     .column_lg_3 {
+         width: 25%;
+     }
+/*Tablet*/
+@media (max-width: 992px) and (min-width: 768px) {
+     .raw {
+        flex-wrap: wrap;
+     }
+     .column_md_6 {
+         width: 50%;
+     }
+ }
+ /*mobile*/
+ @media (max-width:768px) {
+     .raw{
+        flex-direction: column;
+     }
+    .column_sl_12 {
+        width: 100%;
+    }
+}

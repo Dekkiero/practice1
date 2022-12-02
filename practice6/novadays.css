@@ -1,0 +1,62 @@
+  ul li:nth-child(odd){
+            background-color: gray;
+        }
+        ul li:nth-child(even){
+            background-color: white;
+        }
+        ol li:nth-child(3):hover,
+        ol li:nth-child(5):hover{
+            cursor: pointer;
+        }
+        ol li:nth-child(4){
+            background-color: orange;
+        }
+        h1{
+          text-align: center;
+          font-size: 22px;
+        }
+        #back {
+          font-style: italic;
+        }
+        .tcenter{
+          text-align: center;
+        }
+
+
+.raw{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+ /*Desctop*/
+@media (min-width: 992px) {
+    .column_lg_6 {
+        width: 49.6%;
+    }
+}
+/*Tablet*/
+@media (max-width: 992px) and (min-width: 768px) {
+
+    .raw {
+        flex-wrap: wrap;
+    }
+    .column_md_12 {
+        width: 100%;
+    }
+}
+/*mobile*/
+@media (max-width:768px) {
+    .raw{
+        flex-direction: column;
+    }
+    .column_sl_12 {
+        width: 100%;
+    }
+}
